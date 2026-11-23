@@ -33,7 +33,7 @@ public class Agent implements IMarioAgentMFF, IAgentBenchmark, IAgentBenchmarkBa
                 return actionsList.remove(actionsList.size() - 1);
         }
 
-        AStarTree tree = new AStarTree(model, 3);
+        AStarTree tree = new AStarTree(model, AStarTree.SEARCH_STEPS);
         ArrayList<boolean[]> newActionsList = tree.search(timer);
         totalSearchCalls++;
         this.totalNodesEvaluated += tree.nodesEvaluated;
