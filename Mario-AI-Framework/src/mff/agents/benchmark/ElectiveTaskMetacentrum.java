@@ -20,7 +20,6 @@ public class ElectiveTaskMetacentrum {
 
     private static final String AGENT_TYPE = "astarGrid";
 
-    // fixed astarGrid parameters (one of the representative configurations of the original work)
     private static final float NODE_DEPTH_WEIGHT = 1f;
     private static final float TIME_TO_FINISH_WEIGHT = 2f;
     private static final float DISTANCE_FROM_PATH_TOLERANCE = 1f;
